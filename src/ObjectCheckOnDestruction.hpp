@@ -23,7 +23,7 @@ public:
 
 	~ObjectCheckOnDestruction()
 	{
-		assert(checker.checkInvariant(object));
+		assert(checker.operator()(object));
 	}
 
 	operator T&()

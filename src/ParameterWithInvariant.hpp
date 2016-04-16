@@ -20,7 +20,7 @@ public:
 	ParameterWithInvariant(T& obj)
 		: object(obj)
 	{
-    assert(object);
+    assert(checker.operator()(object));
 	}
 
 	~ParameterWithInvariant()

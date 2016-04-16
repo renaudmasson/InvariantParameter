@@ -15,7 +15,7 @@ using namespace std;
 class Positive
 {
 public:
-	static bool checkInvariant(int val)
+	bool operator()(int val)
 	{
 		return val > 0;
 	}
